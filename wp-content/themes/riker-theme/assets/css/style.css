@@ -14,7 +14,7 @@ html {
  ** Global
  **********************************************************/
 
-.wrapper{
+ .wrapper{
     width: 960px;
     margin: 2em auto;
     color: #333;
@@ -57,6 +57,10 @@ i{font-style: italic;}
     line-height: 1em;
 }
 
+.header h1 a{
+    color: #333;
+}
+
 .main{
     flex: 1 0 70%;
 }
@@ -93,7 +97,11 @@ i{font-style: italic;}
     font-weight: bold;
 }
 
-.aside-heading{
+.search-heading{
+    margin-bottom: 36px;
+}
+
+.aside-heading, .wp-block-search__label{
     font-size: 1.22222222222222em;
     font-weight: bold;
 }
@@ -124,8 +132,48 @@ form input[type="submit"]{
     margin-top: 1em;
 }
 
-.sidebar{
+.wp-block-search__inside-wrapper {
+    display: block;
+    margin: 1em 0em !important;
+}
+
+.wp-block-search{
+    margin: 0;
+}
+
+.wp-block-search__input {
+    width: 100%;
+    border-radius: 0px;
+    padding: 5px;
+    font-size: 15px;
+    padding: 0 7px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.wp-block-search__button {
+    background: #c00;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    margin-top: 1em;
+    margin-left: 0 !important;
+    font-size: 14px!important;
+    line-height: initial !important;
+}
+
+.sidebar {
     margin-left: 2em;
+}
+
+.comment-reply-title{
+    font-weight: bold;
+}
+
+.comment-form-comment label{
+    display: block;
 }
 
 .footer{
@@ -133,3 +181,22 @@ form input[type="submit"]{
     background: #eee;
     padding: 1em 0em;
 }
+
+/**********************************************************
+ ** Responsive
+ **********************************************************/
+
+ @media(max-width: 960px){
+
+    .wrapper{
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sidebar {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+ }
