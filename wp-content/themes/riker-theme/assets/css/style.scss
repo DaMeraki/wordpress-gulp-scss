@@ -1,0 +1,244 @@
+$colorRed : #c00;
+$colorBlack : #333;
+$colorGrey: #eee;
+$colorLight: #ccc;
+$colorWhite: #fff;
+$fontDefault: 1.22222222222222em;
+
+/**********************************************************
+** Web font
+**********************************************************/
+
+/* poppins-regular - latin */
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+src: url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-regular.eot');
+src: local(""), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-regular.eot?#iefix') format("embedded-opentype"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-regular.woff2') format("woff2"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-regular.woff') format("woff"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-regular.ttf') format("truetype"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-regular.svg#Poppins') format("svg");
+}
+
+/* poppins-700 - latin */
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+src: url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-700.eot');
+src: local(""), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-700.eot?#iefix') format("embedded-opentype"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-700.woff2') format("woff2"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-700.woff') format("woff"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-700.ttf') format("truetype"), url('/wp-content/themes/riker-theme/dist/fonts/poppins-v20-latin-700.svg#Poppins') format("svg");
+}
+
+/**********************************************************
+ ** Resets
+ **********************************************************/
+
+ html {
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  
+    &:before, &:after {
+      box-sizing: inherit;
+    }
+  }
+  
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /**********************************************************
+   ** Global
+   **********************************************************/
+  
+  .wrapper {
+    width: 960px;
+    margin: 2em auto;
+    color: $colorBlack;
+    font-size: 1.125em;
+  
+    /* 18px */
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    display: flex;
+  }
+  
+  a {
+    color: $colorRed;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  p {
+    margin: 1em 0em;
+  }
+  
+  i {
+    font-style: italic;
+  }
+  
+  /**********************************************************
+   ** Components
+   **********************************************************/
+  
+  .header {
+    font-weight: bold;
+    border-bottom: 1px solid $colorGrey;
+  
+    .wrapper {
+      margin: 4em auto 2em auto;
+    }
+  
+    h1 {
+      font-size: 2em;
+      line-height: 1em;
+  
+      a {
+        color: $colorBlack;
+      }
+    }
+  }
+  
+  .main {
+    flex: 1 0 70%;
+  }
+  
+  .article {
+    margin-bottom: 2em;
+  
+    + .article {
+      border-top: 1px solid $colorGrey;
+      padding-top: 2em;
+    }
+  }
+  
+  .article-meta {
+    font-size: .8em;
+    font-style: italic;
+  }
+  
+  .article-tags {
+    font-weight: bold;
+  
+    a {
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  
+  .article-meta time {
+    font-weight: bold;
+  }
+  
+  .article-heading {
+    font-size: $fontDefault;
+    font-weight: bold;
+  }
+  
+  .search-heading {
+    margin-bottom: 36px;
+  }
+  
+  .aside-heading, .wp-block-search__label {
+    font-size: $fontDefault;
+    font-weight: bold;
+  }
+  
+  .aside ul {
+    margin: 1em 0em 2em 0em;
+  
+    li {
+      margin-bottom: 1em;
+    }
+  }
+  
+  form {
+    margin: 1em 0em;
+  
+    input {
+      &[type="text"] {
+        width: 100%;
+        border-radius: 0px;
+        padding: 5px;
+      }
+  
+      &[type="submit"] {
+        background: $colorRed;
+        color: $colorWhite;
+        border: none;
+        padding: 5px;
+        margin-top: 1em;
+      }
+    }
+  }
+  
+  .wp-block-search__inside-wrapper {
+    display: block;
+    margin: 1em 0em !important;
+  }
+  
+  .wp-block-search {
+    margin: 0;
+  }
+  
+  .wp-block-search__input {
+    width: 100%;
+    border-radius: 0px;
+    padding: 5px;
+    font-size: 15px;
+    padding: 0 7px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+  }
+  
+  .wp-block-search__button {
+    background: $colorRed;
+    color: $colorWhite;
+    border: none;
+    padding: 5px;
+    margin-top: 1em;
+    margin-left: 0 !important;
+    font-size: 14px !important;
+    line-height: initial !important;
+  }
+  
+  .sidebar {
+    margin-left: 2em;
+  }
+  
+  .comment-reply-title {
+    font-weight: bold;
+  }
+  
+  .comment-form-comment label {
+    display: block;
+  }
+  
+  .footer {
+    border-top: 1px solid $colorLight;
+    background: $colorGrey;
+    padding: 1em 0em;
+  }
+  
+  /**********************************************************
+   ** Responsive
+   **********************************************************/
+  
+  @media (max-width: 960px) {
+    .wrapper {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .sidebar {
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
