@@ -20,7 +20,7 @@
     <header class="header">
       <div class="wrapper">
         <h1>
-            <h1>Will Riker. Legend.</h1>
+          <a href="<?php echo esc_url( home_url() ) ;?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </h1>
       </div>
     </header><!-- end .header -->
