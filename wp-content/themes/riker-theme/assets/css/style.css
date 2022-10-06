@@ -1,0 +1,135 @@
+
+/**********************************************************
+ ** Resets
+ **********************************************************/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/**********************************************************
+ ** Global
+ **********************************************************/
+
+.wrapper{
+    width: 960px;
+    margin: 2em auto;
+    color: #333;
+    font-size: 1.125em; /* 18px */
+    font-family: Helvetica, Arial, sans-serif;
+    line-height:  1.5em;
+    display: flex;
+}
+
+a{
+    color: #c00;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    margin: 1em 0em;
+}
+
+i{font-style: italic;}
+
+/**********************************************************
+ ** Components
+ **********************************************************/
+
+.header{
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.header .wrapper{
+    margin: 4em auto 2em auto;
+}
+
+.header h1{
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.main{
+    flex: 1 0 70%;
+}
+
+.article{
+    margin-bottom: 2em;
+}
+
+.article + .article {
+    border-top: 1px solid #eee;
+    padding-top: 2em;
+}
+
+.article-meta{
+    font-size: .8em;
+    font-style: italic;
+}
+
+.article-tags{
+    font-weight: bold;
+}
+
+.article-tags a{
+    font-weight:  normal;
+    font-style: italic;
+}
+
+.article-meta time{
+    font-weight: bold;
+}
+
+.article-heading{
+    font-size: 1.22222222222222em;
+    font-weight: bold;
+}
+
+.aside-heading{
+    font-size: 1.22222222222222em;
+    font-weight: bold;
+}
+
+.aside ul{
+    margin: 1em 0em 2em 0em;
+}
+
+.aside ul li{
+    margin-bottom: 1em;
+}
+
+form{
+    margin: 1em 0em;
+}
+
+form input[type="text"]{
+    width: 100%;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+form input[type="submit"]{
+    background: #c00;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    margin-top: 1em;
+}
+
+.sidebar{
+    margin-left: 2em;
+}
+
+.footer{
+    border-top: 1px solid #ccc;
+    background: #eee;
+    padding: 1em 0em;
+}
