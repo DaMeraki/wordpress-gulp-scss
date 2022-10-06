@@ -1,0 +1,21 @@
+{
+  "name": "riker-theme",
+  "version": "1.0.0",
+  "description": "Riker theme - test project",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "riker",
+    "wordpress",
+    "wordpress",
+    "test"
+  ],
+  "author": "Zeeshan Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
