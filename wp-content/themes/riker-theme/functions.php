@@ -12,9 +12,8 @@ add_action( 'after_setup_theme', 'riker_basics' );
 // Loading our riker theme styles
 function riker_styles() {
 
-    $version = wp_get_theme()->get('version'); 
-    wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/dist/css/style.css', [ 'reset-css' ], $version, 'all' );
-    wp_enqueue_style( 'reset-css', get_stylesheet_directory_uri() . '/dist/css/reset.css', array(), $version, 'all' );
+    wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/dist/css/style.css', [ 'reset-css' ], '', 'all' );
+    wp_enqueue_style( 'reset-css', get_stylesheet_directory_uri() . '/dist/css/reset.css', array(), '', 'all' );
 
 }
 add_action( 'wp_enqueue_scripts', 'riker_styles' );
