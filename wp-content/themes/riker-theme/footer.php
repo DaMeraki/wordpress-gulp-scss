@@ -8,7 +8,7 @@
         
         <footer class="footer">
             <div class="wrapper">
-                <p>&copy; Startdate 92722.99. <i>All Rights Reserved</i>.</p>
+                <p>&copy; <?php bloginfo( 'name' ); ?> <?php echo date('Y'); ?>. <i>All Rights Reserved</i>.</p>
             </div>
         </footer>
 
