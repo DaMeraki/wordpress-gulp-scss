@@ -1,0 +1,29 @@
+# WP Core files to ignore
+/wp-admin/
+/wp-content/languages
+/wp-includes/
+/upgrade/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+wp-config-docker.php
+wp-config-sample.php
+
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
+
+# Log files
+*.log
+.gitattributes
+
+# Dstore ignore
+*.DS_Store
