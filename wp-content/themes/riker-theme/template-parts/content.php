@@ -1,6 +1,6 @@
 <?php
 /**
- * Comments template
+ * Template for posts
  * @package riker-theme
  */
 ?>
